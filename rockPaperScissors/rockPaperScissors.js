@@ -21,7 +21,7 @@
 function rockPaperScissors(num){
 	var arr = ["rock","paper","scissors"];
 	var final = [];
-	var disnum = Math.pow(3,num);
+	var disnum = Math.pow(num,3);
 	var counter = 0;
 	while(counter < disnum){
 		var minArr = [];
