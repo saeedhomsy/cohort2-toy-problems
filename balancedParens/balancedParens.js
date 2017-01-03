@@ -29,13 +29,18 @@
  	var closePar = ['}',')',']']
  	var newInput = input.replace(/[a-zA-Z0-9]/g, '').replace(/ /g,'');
  	var strArr = newInput.split('');
- 	var result = null;
- 	if (input.length===1) {
+ 	var result = true;
+ 	if (newInput.length===1 || newInput.length % 2 !== 0) {
  		return false;
  	}
  	for (var i = 0; i < strArr.length; i++) {
- 		var openIndx = openPar.indexOf(strArr[0])
- 		var closIndx = closePar[openIndx]
- 		if (true) {}
+ 		var openIndx = openPar.indexOf(strArr[0]);
+ 		var closIndx = closePar.indexOf(closePar[openIndx]);
+ 		if (strArr.indexOf(strArr[0])!==strArr.indexOf(closePar[openIndx])-1||strArr.indexOf(strArr[0]) !== strArr.length-(1+strArr.indexOf(closePar[openIndx]))) {	
+ 			return false	
+ 		}
+ 		
  	}
-};
+ 	return result;
+ };
+ //strArr.indexOf(strArr[0]) !== strArr.length-(1+strArr.indexOf(closePar[openIndx]))
