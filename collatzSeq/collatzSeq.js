@@ -15,6 +15,7 @@ NOTE: Once the chain starts the terms are allowed to go above one million.
 */
 
 
+<<<<<<< HEAD
 var longestCollatzSeq = function(n){
 	var arr = [];
 	while(n>1){
@@ -42,4 +43,8 @@ var newfunc = function(){
 		}
 	}
 	return num
+=======
+var longestCollatzSeq = function(){
+
+>>>>>>> bb8517a2725233bbc3b562c76a45f0fdc05b163d
 }
