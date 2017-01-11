@@ -11,7 +11,19 @@
   * don't worry about handling cyclical object structures.
   *
   */
-
   var deepEquals = function(obj1, obj2){
-    return JSON.stringify(obj1) === JSON.stringify(obj2)
+    var isEqual = true;
+    for (var i = 0; i < Object.keys(obj1).length; i++) {
+      if (typeof obj1[Object.keys(obj1)[i]] === 'object' && typeof obj2[Object.keys(obj1)[i]] === 'object') {
+        return isEqual = isEqual && deepEquals(obj1[Object.keys(obj1)[i]],obj2[Object.keys(obj1)[i]]);
+      }else{
+        if (obj1[Object.keys(obj1)[i]] !== obj2[Object.keys(obj1)[i]]) {
+          isEqual = false;
+          break;
+        }
+      }
+    }
+    return isEqual;
   }
+
+    //return JSON.stringify(obj1) === JSON.stringify(obj2)
