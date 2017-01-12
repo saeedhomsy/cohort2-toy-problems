@@ -22,21 +22,33 @@ Complete the functions in order to provide this functionality.
 
 function Jar() {
   // TODO
-  this.storage={'apple':0,'banana':0}
+  this.storage={}
 }
 
 Jar.prototype.getConcentration = function(key){
-	var total = this.storage['apple'] + this.storage['banana'];
+	var total = 0
+	for(var key in this.storage){
+		total += this.storage[key];		
+	}
+	//var total = this.storage['apple'] + this.storage['banana'];
 	return total===0?0:(this.storage[key] * 100) / total + '%'
 }
 
-Jar.prototype.add = function(number,key){
-	this.storage[key] += number;
+Jar.prototype.add = function(number,key){debugger
+	if (key in this.storage){
+		this.storage[key] += number;
+	}else{
+		this.storage[key] = number;
+	}
 	console.log('added successfully')
 }
 
-Jar.prototype.getTotalAmount = function(){
-	return total = this.storage['apple'] + this.storage['banana'];	
+Jar.prototype.getTotalAmount = function(){debugger
+	var total = 0
+	for(var key in this.storage){
+		total += this.storage[key];		
+	}
+	return total
 }
 
 /*
