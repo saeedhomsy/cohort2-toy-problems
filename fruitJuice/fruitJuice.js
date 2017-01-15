@@ -22,6 +22,7 @@ Complete the functions in order to provide this functionality.
 
 function Jar() {
   // TODO
+<<<<<<< HEAD
   this.storage={}
 }
 
@@ -49,6 +50,8 @@ Jar.prototype.getTotalAmount = function(){debugger
 		total += this.storage[key];		
 	}
 	return total
+=======
+>>>>>>> 9088e14fd3d4b5f7980473d76fa7d9d9b84ec461
 }
 
 /*
