@@ -35,8 +35,14 @@ rotate(data, 12478) // => [3, 4, 5, 1, 2]
 
 */
 function rotate(array, steps){
-	for ( var i = 0; i < steps; i++ ) {
-		array.unshift( array.pop() );
+	if (steps>0) {
+		for ( var i = 0; i < steps; i++ ) {
+			array.unshift( array.pop() );
+		}
+	}else{
+		for ( var i = 0; i < Math.abs(steps); i++ ) {
+			array.push( array.shift() );
+		}
 	}
 	return array
 	//Big-O(1)
