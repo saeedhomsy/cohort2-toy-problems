@@ -34,19 +34,6 @@ function ticTacToe(board){
 	//must loop throw diag and show res
 };
 
-function checkRow(rowArr){debugger
-	var res = -1;
-	if(rowArr[0]!== 0){
-		res = rowArr[0]
-		var isSame = true;
-		for (var i = 1; i < rowArr.length; i++) {
-			if (rowArr[0] !== rowArr[i]) {
-				return -1
-			}
-		}
-	}
-	return res
-}
 
 function checkCol(board,colInd){debugger
 	var ctr = 0;
@@ -62,6 +49,21 @@ function checkCol(board,colInd){debugger
 		
 	}
 	return res;
+}
+
+
+function checkRow(rowArr){debugger
+	var res = -1;
+	if(rowArr[0]!== 0){
+		res = rowArr[0]
+		var isSame = true;
+		for (var i = 1; i < rowArr.length; i++) {
+			if (rowArr[0] !== rowArr[i]) {
+				return -1
+			}
+		}
+	}
+	return res
 }
 
 function checkDiag(board){
