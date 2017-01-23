@@ -22,6 +22,7 @@ ticTacToe(solvedBoard);//should return 1
 */
 
 function ticTacToe(board){
+<<<<<<< HEAD
 	var finalRes = -1
 	var collArr = []
 
@@ -69,3 +70,7 @@ function checkRow(rowArr){debugger
 function checkDiag(board){
 
 }
+=======
+	
+};
+>>>>>>> 169bb2998308d17180eaceea99dcf1c0881da3a6
