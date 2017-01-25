@@ -37,6 +37,7 @@
  *  - Make your function accept a parameter for the direction of rotation (1 = clockwise, -1 = counterclockwise)
  */
 
+<<<<<<< HEAD
  var rotateMatrix =function (matrix) {
  	for (var i = 0; i < matrix.length; i++) {
  		for (var j = 0; j <i; j++) {
@@ -47,4 +48,9 @@
  	}
  	return matrix
  }
+=======
+var rotateMatrix =function (matrix) {
+	
+}
+>>>>>>> 1337768aeb5d682fb6643a9f52b37165938d4930
 ///////////////////
