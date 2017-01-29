@@ -10,6 +10,7 @@
  * console.log(index); // 4
  */
 
+<<<<<<< HEAD
  var binarySearch = function (array, target) {
  	var lInd = 0;
  	var hInd = array.length-1;
@@ -29,4 +30,9 @@
  	}
  	return midInd
  };
+=======
+var binarySearch = function (array, target) {
+  
+};
+>>>>>>> 058d88e467c5e3285e230388b5013dd17b1a7a31
 
