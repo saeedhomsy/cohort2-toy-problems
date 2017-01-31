@@ -32,6 +32,7 @@
   addAndMultiply(5);//should be 21
   var addAndMultiplyTwice = pipe(add2, multiplyBy3, multiplyBy3);
   addAndMultiplyTwice(5); //should be 63
+<<<<<<< HEAD
   */
 
   'use strict';
@@ -63,6 +64,27 @@ var compose = function(){
     var tt = args
     return args[0](args[1](x))
   }
+=======
+ */
+
+'use strict';
+var add2 = function(number){ return number + 2; }
+var multiplyBy3 = function(number){ return number * 3; }
+
+var pipe = function(func1,func2){
+  
+};
+
+var addAndMultiplyTwice = pipe(add2, multiplyBy3, multiplyBy3);
+
+//==============================================================================
+
+ var greet = function(name){ return 'hello ' + name;}
+ var exclaim = function(statement) { return statement.toUpperCase() + '!';}
+
+var compose = function(){
+  
+>>>>>>> 32ec765f1092370c51aa9304f6bcb68a44b9cb07
 };
 
 
