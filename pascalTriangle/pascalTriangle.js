@@ -24,6 +24,7 @@ For example:
 buildTriangle(3);// should output [[1],[1,1],[1,2,1]];
 */
 
+<<<<<<< HEAD
 var buildTriangle = function(numOfRows){debugger
 	var finalArr = [];
 	for (var i = 0; i < numOfRows; i++) {
@@ -47,3 +48,9 @@ var buildTriangle = function(numOfRows){debugger
 	}
 	return finalArr
 }
+=======
+var buildTriangle = function(numOfRows){
+	
+}
+		
+>>>>>>> 489641d63aec9a4741e9d52eb49286a5629cb485
